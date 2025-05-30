@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Piedra, Papel o Tijera</title>
+</head>
+
+<body>
+  <h1>Juego de Piedra, Papel o Tijera</h1>
+  <section>
+
+    <p class="instruccion">Escribe un número entre 1 y 3 para jugar:</p>
+    <p> (1 - piedra) (2 - papel) (3 - tijera)</p>
+    <input type="number" id="jugadaUsuario">
+    <button id="botonJugar" onclick="jugar()">Jugar</button>
+    <p id="mensaje"></p>
+    <div>
+      <div>
+        <h3>Tu juego</h3>
+        <img src="./img/none.png" alt="imagen1" id="imgusuario">
+      </div>
+      <div>
+        <h3>Juego del ordenador</h3>
+        <img src="./img/none.png" alt="imagen2" id="imgmaquina">
+      </div>
+    </div>
+
+
+    <script src="./js/app.js"></script>
+  </section>
+</body>
+
+</html>

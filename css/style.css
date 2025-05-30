@@ -1,0 +1,55 @@
+/* * {
+  outline: 1px solid red;
+} */
+
+body {
+  width: 80%;
+  background-color: whitesmoke;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+section {
+  width: 60%;
+  border: 2px solid black;
+  margin: 0 auto;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  gap: 1px;
+
+
+}
+
+div {
+  display: inline-block;
+}
+
+h3 {
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.instruccion {
+  text-align: center;
+  font-size: 2em;
+}
+
+input {
+  display: block;
+  margin: 10px;
+}
+
+ul {
+  padding: auto;
+  margin: 0;
+}

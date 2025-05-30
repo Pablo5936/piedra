@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RANDOM</title>
+</head>
+
+<body>
+  <p><button type="button" onclick="mostrarRandom()">mostrarRandom</button></p>
+  <p><button type="button" onclick="mostrarRandomAbajo()">mostrarRandomAbajo</button></p>
+  <p><button type="button" onclick="mostrarRandomArriba()">mostrarRandomArriba</button></p>
+  <script>
+    console.clear;
+    function mostrarRandom() {
+      alert(Math.random());
+    }
+    function mostrarRandomAbajo() {
+      let max = 20; // El numero nunca es 20 con Math.floor()
+      let min = 10;
+      let numeroRandom = (Math.random() * (max - min)) + min;
+      let numeroRandomFloor = Math.floor(numeroRandom);
+      let mensaje = `numeroRandom: ${numeroRandom} y numeroRandomFloor: ${numeroRandomFloor}`;
+      console.log(mensaje);
+    }
+
+    function mostrarRandomArriba() {
+      let max = 20;
+      let min = 10; // El numero nunca es 10 con Math.ceil()
+      let numeroRandom = (Math.random() * (max - min)) + min;
+      let numeroRandomCeil = Math.ceil(numeroRandom);
+      let mensaje = `numeroRandom: ${numeroRandom} y numeroRandomCeil: ${numeroRandomCeil}`;
+      console.log(mensaje);
+    }
+
+  </script>
+</body>
+
+</html>
